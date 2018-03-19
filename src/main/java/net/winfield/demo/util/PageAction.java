@@ -12,6 +12,8 @@ import static java.util.stream.Collectors.toList;
 
 public class PageAction {
 
+    private String noUseField;
+    
     public void openBrowser(Parameter parameter) throws InterruptedException {
         parameter.getDriver().manage().window().maximize();
         Thread.sleep(Integer.parseInt(parameter.getTimeout()));
